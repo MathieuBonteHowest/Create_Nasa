@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Picture of The Day</title>
+
+    <!-- Check for actual screen size -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="style/screen.css">
+
+    <!-- Roboto font ophalen -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+    <!-- Ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+</head>
+<body>
+
+<header class="header__navigation">
+    <div class="wrap">
+        <div class="header__logo">
+            <a href="#" class="header__logo__link">
+                <img class="header__logo__link__picture" src="media/nasaLogo-570x450.png">
+            </a>
+        </div><!--
+        --><nav class="header__main__navigation">
+            <ul class="header__navigation__list">
+                <li class="header__navigation__item"><a href="#" class="header__navigation__link">home</a></li>
+                <li class="header__navigation__item"><a href="#" class="header__navigation__link">contact us</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div class="container shadow-1">
+    <img class="container__picture" id="apod_img_id">
+</div>
+<video id="apod_vid_id"></video>
+
+
+<div class="cd-popup" role="alert">
+    <div class="cd-popup-container">
+        <p id="apod_title"></p>
+        <p id="apod_explaination"></p>
+        <a href="#0" class="cd-popup-close img-replace">Close</a>
+    </div>
+</div>
+
+<script src="script/app.js"></script>
+</body>
+</html>
