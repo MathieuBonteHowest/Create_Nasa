@@ -6,7 +6,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
 });
 
 var key = "nQGhQm8MtOQ4mTrszAnbt0NbFBZbZbYWmIJRgPxU";
-var date = "2017-11-24";
+var date = "2017-12-2";
 
 
 var url = "https://api.nasa.gov/planetary/apod?api_key="+key+"&date="+date;
