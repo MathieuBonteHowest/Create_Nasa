@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing:border-box
 }
 
 body, html{
@@ -44,16 +45,11 @@ body, html{
 .header__navigation__list{
     padding: 4px 0;
     text-align: center;
+    margin-top: 10px;
 }
 
 .header__navigation__item{
     display: inline-block;
-    margin-right: 15px;
-}
-
-
-.header__navigation__item:last-of-type{
-    margin-right: 0;
 }
 
 .header__navigation__link{
@@ -62,9 +58,11 @@ body, html{
     text-transform: uppercase;
 }
 
-.header__navigation__link:hover{
-    color: #fc3d21;
+.header__navigation__list:hover{
+    color: #b22222;
+    background-color: #0b3d91;
 }
+
 
 .container{
     display: block;
@@ -102,6 +100,7 @@ iframe{
 }
 
 .shadow-1:hover {
+    cursor: pointer;
     box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
@@ -164,7 +163,7 @@ iframe{
 .cd-popup-container {
     position: relative;
     line-height: 23px;
-    max-width: 80%;
+    max-width: 90%;
     margin: 4em auto;
     padding: 30px 30px 0 30px;
     background: #FFF;
@@ -197,7 +196,7 @@ iframe{
 }
 .cd-popup-close{
     width: calc(100% + 60px);
-    background-color: #fc3d21;
+    background-color: #b22222;
     margin-left: -30px;
     height: 33px;
     border-radius: 0 0 .4em .4em;
@@ -207,10 +206,78 @@ iframe{
 }
 
 
+#contact{
+    width: 100%;
+    background-color: #b22222;
+    color: #fdfefe;
+}
+
+#contact .title{
+    color: #fdfefe;
+    padding-top: 20px;
+}
+
+.content{
+    width: 100%;
+}
+
+.name, .email, .subject, .message, .sendbutton{
+    padding: 0 15px;
+}
+
+.name label, .email label, .subject label, .message label{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.name input[type="text"], .email input[type="text"], .subject input[type="text"], .message textarea{
+    width: 100%;
+    background-color: #fcfcfc;
+    padding: 0 20px;
+    border: 1px solid #e1e1e1;
+    outline: 0;
+    color: #8c9597;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.message textarea{
+    height: 217px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+.sendbutton input[type="submit"]{
+    height: 44px;
+    margin: 40px 0;
+    padding: 0 60px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    color: #b22222;
+    background-color: #fdfefe;
+    margin-left: calc(100% - 152.59px);
+}
+
+.sendbutton input[type="submit"]:hover{
+    background-color: #0b3d91;
+    color: #fdfefe;
+    cursor: pointer;
+}
+
+#footer{
+    width: 100%;
+    color: #fdfefe;
+    line-height: 25px;
+    background-color: #222222;
+    padding: 20px;
+    text-align: center;
+}
+
+
 @media screen and (min-width: 400px){
-    * {
-        box-sizing:border-box
-    }
     .header__logo,
     .header__main__navigation{
         display: inline-block;
@@ -224,17 +291,15 @@ iframe{
     }
 
     .header__main__navigation{
-        width: 80%;
+        width: 25%;
+        height: 99px;
+        margin-left: calc(80% - 140px - 133px);
     }
 
     .header__navigation__list{
-        text-align: right;
+        margin: 0;
+        padding: 40px 0;
     }
-
-    .header__navigation__item:last-of-type{
-        margin-right: 70px;
-    }
-
 
     .container{
         display: block;
@@ -273,6 +338,16 @@ iframe{
         visibility: hidden;
         margin: 0 auto;
     }
+
+    .content{
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .name , .email, .subject{
+        width: 70%;
+        display: inline-block;
+    }
 }
 
 @media screen and (min-width: 1000px) {
@@ -307,66 +382,19 @@ iframe{
         transition-duration: 0.3s;
     }
 
-    #contact{
-        width: 100%;
-        background-color: #CC0000;
-    }
-
-    #contact .title{
-        padding-top: 20px;
-        color: #fdfefe;
-    }
-
     .content{
         width: 70%;
-        margin: 25px auto 40px;
-
+        margin: 0 auto;
     }
 
-    .name,.email,.subject, .message{
-        display: inline-block;
-        padding-left: 15px;
-        padding-right: 15px;
-    }
-
-    .name,.email,.subject{
+    .name , .email, .subject{
         width: 33%;
+        display: inline-block;
     }
 
-    .message{
-        width: 100%;
-        padding-right: 0;
+    .header__main__navigation{
+        width: 10%;
     }
 
-    .subject{
-        padding-right: 0;
-    }
 
-    .name label,.email label,.subject label, .message label{
-        display: block;
-        margin-bottom: 10px;
-        font-weight: 400;
-        color: #fdfefe;
-    }
-    .name input,.email input,.subject input, .message textarea{
-        width: 100%;
-        background-color: #fcfcfc;
-        padding: 0 20px;
-        border: 1px solid #e1e1e1;
-        outline: 0;
-        color: #8c9597;
-        font-weight: 400;
-        line-height: 25px;
-        margin-bottom: 20px;
-    }
-
-    .name input,.email input,.subject input{
-        height: 35px;
-    }
-
-    .message textarea{
-        height: 217px;
-        padding: 10px 20px;
-        margin-bottom: 20px;
-    }
 }

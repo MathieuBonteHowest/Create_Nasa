@@ -7,10 +7,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
 
 var key = "nQGhQm8MtOQ4mTrszAnbt0NbFBZbZbYWmIJRgPxU";
 
-var date = "2017-12-2";
+// var date = "2017-12-1";
 
 
-var url = "https://api.nasa.gov/planetary/apod?api_key="+key+"&date="+date;
+var url = "https://api.nasa.gov/planetary/apod?api_key="+key;
 
 // var params = {
 //     container: document.getElementById('lottie'),
