@@ -4,9 +4,17 @@
 }
 
 body, html{
-    font-family: 'Roboto', 'Georgia';
+    font-family: 'Roboto', sans-serif;
     font-size: 15px;
     background-color: #fdfefe;
+}
+
+#lottie{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-color: #fdfefe;
+    z-index: 9999;
 }
 
 /*TOP BAR*/
@@ -14,7 +22,7 @@ body, html{
     /*position: fixed;*/
     width: 100%;
     background-color: #222222;
-    z-index: 9999;
+    z-index: 9998;
     margin-bottom: 35px;
 }
 
@@ -105,11 +113,22 @@ iframe{
     margin: 0 auto;
 }
 
-#apod__title__mainpage{
-    text-align: center;
-    font-size: 1.5rem;
+#apod__title__mainpage, .title{
     margin-bottom: 20px;
     color: #222222;
+    text-align: center;
+}
+
+.title{
+    font-size: 2rem;
+}
+
+#apod__title__mainpage{
+    font-size: 1.3rem;
+}
+
+#main{
+    margin-bottom: 40px;
 }
 
 .cd-popup {
@@ -286,5 +305,39 @@ iframe{
         -webkit-transition-duration: 0.3s;
         -moz-transition-duration: 0.3s;
         transition-duration: 0.3s;
+    }
+
+    #contact{
+        width: 70%;
+        margin: 25px auto 40px;
+    }
+
+    .name,.email,.subject{
+        display: inline-block;
+        width: 33%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .subject{
+        padding-right: 0;
+    }
+
+    .name label,.email label,.subject label{
+        display: block;
+        margin-bottom: 10px;
+        font-weight: 400;
+        color: #222222;
+    }
+    .name input,.email input,.subject input{
+        width: 100%;
+        height: 35px;
+        background-color: #fcfcfc;
+        padding: 0 20px;
+        border: 1px solid #e1e1e1;
+        outline: 0;
+        color: #8c9597;
+        font-weight: 400;
+        line-height: 25px;
     }
 }

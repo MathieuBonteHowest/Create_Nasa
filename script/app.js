@@ -12,6 +12,17 @@ var date = "2017-12-2";
 
 var url = "https://api.nasa.gov/planetary/apod?api_key="+key+"&date="+date;
 
+var params = {
+    container: document.getElementById('lottie'),
+    renderer: 'svg',
+    loop: true,
+    autoplay: true,
+    path: 'data.json'
+};
+
+var anim;
+
+anim = lottie.loadAnimation(params);
 
 $.ajax({
     url: url,
@@ -40,8 +51,14 @@ $.ajax({
         $("#apod__title").text(result.title);
         $("#apod__title__mainpage").text(result.title);
 
+        setTimeout(loader,3000);
+
     }
 });
+
+function loader() {
+    $("#lottie").css("display", "none");
+}
 
 
 jQuery(document).ready(function($){
@@ -65,3 +82,6 @@ jQuery(document).ready(function($){
         }
     });
 });
+
+
+

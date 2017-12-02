@@ -18,6 +18,9 @@
 </head>
 <body>
 
+
+<div id="lottie"></div>
+
 <header class="header__navigation">
     <div class="wrap">
         <div class="header__logo">
@@ -34,28 +37,49 @@
     </div>
 </header>
 
-<p id="apod__title__mainpage"></p>
+<section id="main">
+    <p class="title">Picture of The Day</p>
+    <p id="apod__title__mainpage"></p>
 
-<div class="container">
-    <img id="apod__img__id" class="shadow-1">
-</div>
+    <div class="container">
+        <img id="apod__img__id" class="shadow-1">
+    </div>
 
-<div class="video__container">
-    <iframe id="apod__vid__id"></iframe>
-</div>
+    <div class="video__container">
+        <iframe id="apod__vid__id"></iframe>
+    </div>
+</section>
 
-
-
-<div class="cd-popup" role="alert">
-    <div class="cd-popup-container">
-        <p id="apod__title"></p>
-        <p id="apod__explaination"></p>
-        <div class="cd-popup-close">
-            <a href="#0" class="cd-popup-close img-replace">Close</a>
+<section id="popup">
+    <div class="cd-popup" role="alert">
+        <div class="cd-popup-container">
+            <p id="apod__title"></p>
+            <p id="apod__explaination"></p>
+            <div class="cd-popup-close">
+                <a href="#0" class="cd-popup-close img-replace">Close</a>
+            </div>
         </div>
     </div>
-</div>
+</section>
 
+<section id="contact">
+    <p class="title">Contact us</p>
+    <div class="name">
+        <label>Your Name</label>
+        <input type="text">
+    </div>
+    <div class="email">
+        <label>Your Email</label>
+        <input type="text">
+    </div>
+    <div class="subject">
+        <label>Subject</label>
+        <input type="text">
+    </div>
+
+</section>
+
+<script src="script/lottie.js"></script>
 <script src="script/app.js"></script>
 </body>
 </html>
