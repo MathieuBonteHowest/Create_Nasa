@@ -28,23 +28,31 @@
         --><nav class="header__main__navigation">
         <ul class="header__navigation__list">
             <li class="header__navigation__item"><a href="index.html" class="header__navigation__link">home</a></li>
-            <li class="header__navigation__item"><a href="#" class="header__navigation__link">contact us</a></li>
+            <li class="header__navigation__item"><a href="#" class="header__navigation__link">nasa</a></li>
         </ul>
     </nav>
     </div>
 </header>
 
+<p id="apod__title__mainpage"></p>
+
 <div class="container">
-    <img class="container__picture shadow-1" id="apod_img_id">
+    <img id="apod__img__id" class="shadow-1">
 </div>
-<video id="apod_vid_id"></video>
+
+<div class="video__container">
+    <iframe id="apod__vid__id"></iframe>
+</div>
+
 
 
 <div class="cd-popup" role="alert">
     <div class="cd-popup-container">
-        <p id="apod_title"></p>
-        <p id="apod_explaination"></p>
-        <a href="#0" class="cd-popup-close img-replace">Close</a>
+        <p id="apod__title"></p>
+        <p id="apod__explaination"></p>
+        <div class="cd-popup-close">
+            <a href="#0" class="cd-popup-close img-replace">Close</a>
+        </div>
     </div>
 </div>
 
