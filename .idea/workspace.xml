@@ -18,24 +18,24 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.4034965">
+    <splitter split-orientation="horizontal" split-proportion="0.63375795">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="screen.css" pinned="false" current-in-tab="false">
+          <file leaf-file-name="screen.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/style/screen.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="132" column="21" lean-forward="false" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
+                <state relative-caret-position="357">
+                  <caret line="132" column="30" lean-forward="false" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="app.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/script/app.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1416">
-                  <caret line="86" column="36" lean-forward="false" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
+                <state relative-caret-position="579">
+                  <caret line="257" column="67" lean-forward="false" selection-start-line="257" selection-start-column="67" selection-end-line="257" selection-end-column="67" />
                   <folding />
                 </state>
               </provider>
@@ -48,8 +48,8 @@
           <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/index.html">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="318">
-                  <caret line="44" column="47" lean-forward="false" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+                <state relative-caret-position="119">
+                  <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -79,8 +79,8 @@
       <list>
         <option value="$PROJECT_DIR$/script/loader.js" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/style/screen.css" />
         <option value="$PROJECT_DIR$/script/app.js" />
+        <option value="$PROJECT_DIR$/style/screen.css" />
       </list>
     </option>
   </component>
@@ -91,8 +91,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="210" />
-    <option name="y" value="-13" />
+    <option name="x" value="-77" />
+    <option name="y" value="-15" />
     <option name="width" value="1019" />
     <option name="height" value="867" />
   </component>
@@ -111,7 +111,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -139,11 +138,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Labo/Week2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Labo/Week7" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
     <property name="jsx.switch.disabled" value="true" />
   </component>
@@ -179,11 +179,12 @@
       <workItem from="1512230717354" duration="1235000" />
       <workItem from="1512232036588" duration="8493000" />
       <workItem from="1512295644197" duration="8262000" />
+      <workItem from="1512305767578" duration="4805000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27380000" />
+    <option name="totallyTimeSpent" value="32185000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
@@ -219,6 +220,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/style/screen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2244">
+          <caret line="132" column="21" lean-forward="false" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/script/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="86" column="36" lean-forward="false" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="44" column="47" lean-forward="false" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/style/screen.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1734">
@@ -303,24 +328,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="44" column="47" lean-forward="false" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/style/screen.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="132" column="21" lean-forward="false" selection-start-line="132" selection-start-column="21" selection-end-line="132" selection-end-column="21" />
+        <state relative-caret-position="119">
+          <caret line="23" column="33" lean-forward="false" selection-start-line="23" selection-start-column="15" selection-end-line="23" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/script/app.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1416">
-          <caret line="86" column="36" lean-forward="false" selection-start-line="86" selection-start-column="36" selection-end-line="86" selection-end-column="36" />
+        <state relative-caret-position="579">
+          <caret line="257" column="67" lean-forward="false" selection-start-line="257" selection-start-column="67" selection-end-line="257" selection-end-column="67" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style/screen.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="132" column="30" lean-forward="false" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
           <folding />
         </state>
       </provider>
