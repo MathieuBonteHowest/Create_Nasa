@@ -10,6 +10,8 @@ body, html{
     background-color: #fdfefe;
 }
 
+
+/*------------------------LOADING SCREEN------------------------*/
 #lottie{
     position: fixed;
     width: 100%;
@@ -18,7 +20,7 @@ body, html{
     z-index: 9999;
 }
 
-/*TOP BAR*/
+/*------------------------TOP BAR------------------------*/
 .header__navigation{
     /*position: fixed;*/
     width: 100%;
@@ -27,177 +29,21 @@ body, html{
     margin-bottom: 35px;
 }
 
-/*LOGO*/
+/*------------------------LOGO------------------------*/
 .header__logo{
     text-align: center;
 }
+
 .header__logo__link__picture{
     width: 95px;
     height: 75px;
     margin: 5px 0 5px 0;
 }
 
-/*NAVIGATION*/
-.header__main__navigation{
-
+/*------------------------MAIN------------------------*/
+#main{
+    margin-bottom: 40px;
 }
-
-.header__navigation__list{
-    padding: 4px 0;
-    text-align: center;
-    margin-top: 10px;
-}
-
-.header__navigation__item{
-    display: inline-block;
-}
-
-.header__navigation__link{
-    color: #fdfefe;
-    text-decoration: none;
-    text-transform: uppercase;
-}
-
-.header__navigation__list:hover{
-    color: #b22222;
-    background-color: #0b3d91;
-}
-
-
-.container{
-    display: block;
-    width: 100%;
-    margin: 0 auto 35px auto;
-    visibility: hidden;
-}
-
-.container.is-visible{
-    visibility: visible;
-}
-
-.video__container{
-    display: block;
-    max-width: 100%;
-    visibility: hidden;
-    margin: 0 auto;
-}
-
-iframe{
-    display: block;
-    margin: 0 auto;
-    height: 100%;
-    width: 100%;
-    overflow: hidden;
-}
-
-.video__container.is-visible{
-    visibility: visible;
-}
-
-.shadow-1 {
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-.shadow-1:hover {
-    cursor: pointer;
-    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-#apod__img__id{
-    display: block;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    margin: 0 auto;
-}
-
-.buttons{
-    margin: 0 auto 5px;
-    text-align: center;
-}
-
-.buttons button{
-    height: 44px;
-    margin: 10px 0;
-    padding: 0 60px;
-    border-radius: 5px;
-    border: none;
-    font-weight: 700;
-    color: #fdfefe;
-    background-color: #b22222;
-    display: inline-block;
-}
-
-.buttons button:hover{
-    background-color: #0b3d91;
-    cursor: pointer;
-}
-
-#next{
-    margin-left: 10px;
-    display: none;
-}
-
-.nightmode{
-    margin: 0 15px;
-}
-
-#nightMode{
-    color: #222222;
-}
-.slideThree {
-    width: 80px;
-    height: 26px;
-    background: #333;
-    margin: 5px 0 10px 0;
-    position: relative;
-    border-radius: 50px;
-    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
-}
-
-.slideThree:after {
-     content: 'OFF';
-     color: #000;
-     position: absolute;
-     right: 10px;
-     z-index: 0;
-     font: 12px/26px Arial, sans-serif;
-     font-weight: bold;
-     text-shadow: 1px 1px 0px rgba(255,255,255,.15);
-}
-.slideThree:before {
-     content: 'ON';
-     color: #fdfefe;
-     position: absolute;
-     left: 10px;
-     z-index: 0;
-     font: 12px/26px Arial, sans-serif;
-     font-weight: bold;
- }
-.slideThree label {
-    display: block;
-    width: 34px;
-    height: 20px;
-    cursor: pointer;
-    position: absolute;
-    top: 3px;
-    left: 3px;
-    z-index: 1;
-    background: #fcfff4;
-    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-    border-radius: 50px;
-    transition: all 0.4s ease;
-    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
-}
-.slideThree input[type=checkbox] {
-    visibility: hidden;
-}
-.slideThree input[type=checkbox]:checked + label {
-     left: 43px;
-}
-
-/* end .slideThree */
 
 #apod__title__mainpage, .title{
     margin-bottom: 10px;
@@ -220,8 +66,150 @@ iframe{
     color: #222222;
 }
 
-#main{
-    margin-bottom: 40px;
+/*------------------------TOGGLE------------------------*/
+.nightmode{
+    margin-left: calc(50% - 40px);
+
+}
+
+#nightMode{
+    color: #222222;
+}
+
+.slideThree {
+    width: 80px;
+    height: 26px;
+    background: #333;
+    margin: 5px 0 10px 0;
+    position: relative;
+    border-radius: 50px;
+    box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
+}
+
+.slideThree:after {
+    content: 'OFF';
+    color: #000;
+    position: absolute;
+    right: 10px;
+    z-index: 0;
+    font: 12px/26px Arial, sans-serif;
+    font-weight: bold;
+    text-shadow: 1px 1px 0px rgba(255,255,255,.15);
+}
+.slideThree:before {
+    content: 'ON';
+    color: #fdfefe;
+    position: absolute;
+    left: 10px;
+    z-index: 0;
+    font: 12px/26px Arial, sans-serif;
+    font-weight: bold;
+}
+.slideThree label {
+    display: block;
+    width: 34px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 3px;
+    left: 3px;
+    z-index: 1;
+    background: #fcfff4;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 50px;
+    transition: all 0.4s ease;
+    box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.3);
+}
+.slideThree input[type=checkbox] {
+    visibility: hidden;
+}
+.slideThree input[type=checkbox]:checked + label {
+    left: 43px;
+}
+
+/*------------------------NEXT AND PREV BUTTONS------------------------*/
+.buttons{
+    margin: 0 auto 5px;
+    text-align: center;
+}
+
+.buttons button{
+    height: 44px;
+    margin: 10px 0;
+    padding: 0 40px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 700;
+    color: #fdfefe;
+    background-color: #b22222;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.buttons button:hover{
+    background-color: #5d7fb9;
+}
+
+#next{
+    margin-left: 10px;
+}
+
+/*------------------------FOTO CONTAINER------------------------*/
+.container{
+    display: block;
+    width: 100%;
+    margin: 0 auto 35px auto;
+    visibility: hidden;
+}
+
+.container.is-visible{
+    visibility: visible;
+}
+
+#apod__img__id{
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.shadow-1 {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.shadow-1:hover {
+    cursor: pointer;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+/*------------------------VIDEO CONTAINER------------------------*/
+.video__container{
+    display: block;
+    max-width: 100%;
+    visibility: hidden;
+    margin: 0 auto;
+}
+
+.video__container.is-visible{
+    visibility: visible;
+}
+
+iframe{
+    display: block;
+    margin: 0 auto;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    border: none;
+}
+
+/*------------------------POPUP------------------------*/
+#apod__title{
+    font-size: 1.5rem;
+    color: #5d7fb9;
+    margin-bottom: 15px;
 }
 
 .cd-popup {
@@ -236,6 +224,7 @@ iframe{
     -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
     -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
     transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    z-index: 9999;
 }
 
 .cd-popup.is-visible {
@@ -279,27 +268,21 @@ iframe{
     transition-duration: 0.3s;
 }
 
-#apod__title{
-    font-size: 1.5rem;
-    color: #0b3d91;
-    margin-bottom: 15px;
-}
-
-#apod__explaination{
-    margin-bottom: 20px;
-}
 .cd-popup-close{
     width: calc(100% + 60px);
     background-color: #b22222;
     margin-left: -30px;
     height: 33px;
-    border-radius: 0 0 .4em .4em;
     text-decoration: none;
     color: #fdfefe;
     vertical-align: middle;
 }
 
+#apod__explaination{
+    margin-bottom: 20px;
+}
 
+/*------------------------CONTACT------------------------*/
 #contact{
     width: 100%;
     background-color: #b22222;
@@ -356,11 +339,12 @@ iframe{
 }
 
 .sendbutton input[type="submit"]:hover{
-    background-color: #0b3d91;
+    background-color: #5d7fb9;
     color: #fdfefe;
     cursor: pointer;
 }
 
+/*------------------------FOOTER------------------------*/
 #footer{
     width: 100%;
     color: #fdfefe;
@@ -384,17 +368,6 @@ iframe{
         margin: 5px 0 5px 35px;
     }
 
-    .header__main__navigation{
-        width: 25%;
-        height: 99px;
-        margin-left: calc(80% - 140px - 133px);
-    }
-
-    .header__navigation__list{
-        margin: 0;
-        padding: 40px 0;
-    }
-
     .container{
         display: block;
         width: 80%;
@@ -402,35 +375,11 @@ iframe{
     }
 
     .cd-popup-container {
-        position: relative;
-        line-height: 23px;
         max-width: 80%;
-        margin: 4em auto;
-        padding: 30px 30px 0 30px;
-        background: #FFF;
-        border-radius: .25em .25em .4em .4em;
-        text-align: center;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        -webkit-transform: translateY(-40px);
-        -moz-transform: translateY(-40px);
-        -ms-transform: translateY(-40px);
-        -o-transform: translateY(-40px);
-        transform: translateY(-40px);
-        /* Force Hardware Acceleration in WebKit */
-        -webkit-backface-visibility: hidden;
-        -webkit-transition-property: -webkit-transform;
-        -moz-transition-property: -moz-transform;
-        transition-property: transform;
-        -webkit-transition-duration: 0.3s;
-        -moz-transition-duration: 0.3s;
-        transition-duration: 0.3s;
     }
 
     .video__container{
-        display: block;
         max-width: 80%;
-        visibility: hidden;
-        margin: 0 auto;
     }
 
     .content{
@@ -441,54 +390,52 @@ iframe{
     .name , .email, .subject{
         width: 70%;
         display: inline-block;
+    }
+
+    .nightmode{
+        width: 80%;
+        margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 1000px) {
     .container{
-        display: block;
-        width: 60%;
-        margin: 0 auto 35px auto;
+        width: 70%;
+    }
+
+    .video__container{
+        width: 70%;
     }
 
     .cd-popup-container {
-        position: relative;
-        line-height: 23px;
         max-width: 50%;
-        margin: 4em auto;
-        padding: 30px 30px 0 30px;
-        background: #FFF;
-        border-radius: .25em .25em .4em .4em;
-        text-align: center;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        -webkit-transform: translateY(-40px);
-        -moz-transform: translateY(-40px);
-        -ms-transform: translateY(-40px);
-        -o-transform: translateY(-40px);
-        transform: translateY(-40px);
-        /* Force Hardware Acceleration in WebKit */
-        -webkit-backface-visibility: hidden;
-        -webkit-transition-property: -webkit-transform;
-        -moz-transition-property: -moz-transform;
-        transition-property: transform;
-        -webkit-transition-duration: 0.3s;
-        -moz-transition-duration: 0.3s;
-        transition-duration: 0.3s;
     }
 
     .content{
         width: 70%;
-        margin: 0 auto;
     }
 
     .name , .email, .subject{
         width: 33%;
-        display: inline-block;
     }
 
     .header__main__navigation{
         width: 10%;
     }
+
+    .name, .email, .subject, .message, .sendbutton{
+        padding: 0 15px 0 0;
+    }
+
+    .subject, .message, .sendbutton{
+        padding: 0;
+    }
+    .nightmode{
+        width: 70%;
+        margin: 0 auto;
+    }
+
+
 
 
 }
