@@ -18,16 +18,15 @@ anim = lottie.loadAnimation(params);
 
 var key = "nQGhQm8MtOQ4mTrszAnbt0NbFBZbZbYWmIJRgPxU";
 
-var x = 2;
+var x = 1;
 
 var today = new Date.today();
-showPicture(today);
+showPicture(today.add(1).day());
 
 var dateGlobal = today;
 
 $('#prev').on('click', function(){
     var prev = (x).days().ago();
-    console.log(prev);
     showPicture(prev);
     x = x + 1;
 });
@@ -35,6 +34,7 @@ $('#prev').on('click', function(){
 $('#next').on('click', function(){
     var next = dateGlobal.add(1).day();
     showPicture(next);
+    x = x - 1;
 });
 
 // ---------- TONEN VAN DE AFBEELDING ----------
