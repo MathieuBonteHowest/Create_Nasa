@@ -29,15 +29,43 @@ body, html{
     margin-bottom: 35px;
 }
 
-/*------------------------LOGO------------------------*/
+/*------------------------HEADER------------------------*/
 .header__logo{
     text-align: center;
+    padding-top: 15px;
 }
 
 .header__logo__link__picture{
     width: 95px;
     height: 75px;
-    margin: 5px 0 5px 0;
+    margin: 0;
+}
+
+.title{
+    font-size: 1.6rem;
+    margin-top: 5px;
+}
+
+#apod__title__mainpage{
+    font-size: 1.1rem;
+}
+
+#apod__title__mainpage, .title{
+    margin-bottom: 10px;
+    color: #fdfefe;
+    text-align: center;
+}
+
+#apod__date{
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 5px;
+    color: #222222;
+}
+
+.nightmode{
+    margin: 10px 0;
+    padding: 10px 0;
 }
 
 /*------------------------MAIN------------------------*/
@@ -45,42 +73,17 @@ body, html{
     margin-bottom: 40px;
 }
 
-#apod__title__mainpage, .title{
-    margin-bottom: 10px;
-    color: #222222;
-    text-align: center;
-}
-
-.title{
-    font-size: 2rem;
-}
-
-#apod__title__mainpage{
-    font-size: 1.3rem;
-}
-
-#apod__date{
-    font-size: 1.1rem;
-    text-align: center;
-    margin-bottom: 5px;
-    color: #222222;
-}
-
 /*------------------------TOGGLE------------------------*/
-.nightmode{
-    margin-left: calc(50% - 40px);
-
-}
-
 #nightMode{
-    color: #222222;
+    color: #fdfefe;
+    text-align: center;
 }
 
 .slideThree {
     width: 80px;
     height: 26px;
     background: #333;
-    margin: 5px 0 10px 0;
+    margin: 5px auto 10px;
     position: relative;
     border-radius: 50px;
     box-shadow: inset 0px 1px 1px rgba(0,0,0,0.5), 0px 1px 0px rgba(255,255,255,0.2);
@@ -356,17 +359,6 @@ iframe{
 
 
 @media screen and (min-width: 400px){
-    .header__logo,
-    .header__main__navigation{
-        display: inline-block;
-        vertical-align: middle;
-    }
-
-    .header__logo{
-        text-align: left;
-        width: calc(20% - 35px);
-        margin: 5px 0 5px 35px;
-    }
 
     .container{
         display: block;
@@ -391,20 +383,15 @@ iframe{
         width: 70%;
         display: inline-block;
     }
-
-    .nightmode{
-        width: 80%;
-        margin: 0 auto;
-    }
 }
 
 @media screen and (min-width: 1000px) {
     .container{
-        width: 70%;
+        width: 50%;
     }
 
     .video__container{
-        width: 70%;
+        width: 50%;
     }
 
     .cd-popup-container {
@@ -412,30 +399,42 @@ iframe{
     }
 
     .content{
-        width: 70%;
+        width: 50%;
     }
 
     .name , .email, .subject{
         width: 33%;
     }
 
-    .header__main__navigation{
-        width: 10%;
-    }
-
     .name, .email, .subject, .message, .sendbutton{
         padding: 0 15px 0 0;
     }
 
-    .subject, .message, .sendbutton{
+    .subject, .message, .sendbutton {
         padding: 0;
     }
-    .nightmode{
-        width: 70%;
+
+    .header__logo, .middle_nav, .nightmode{
+        width: 33%;
         margin: 0 auto;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
     }
 
+    .header__logo{
+        padding-bottom: 10px;
+        text-align: left;
+        padding-left: 15px;
+    }
 
+    #nightMode{
+        text-align: right;
+        margin-right: 20px;
+    }
 
-
+    .slideThree{
+        margin: 5px 15px 10px auto;
+    }
 }
+

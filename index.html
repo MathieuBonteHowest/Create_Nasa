@@ -31,25 +31,24 @@
                 <img class="header__logo__link__picture" src="media/nasaLogo-570x450.png">
             </a>
         </div>
-    </nav>
+        <div class="middle_nav">
+            <p class="title">Picture of The Day</p>
+            <p id="apod__title__mainpage"></p>
+        </div>
+        <div class="nightmode">
+            <p id="nightMode">Dark mode</p>
+            <!-- .slideThree -->
+            <div class="slideThree">
+                <input type="checkbox" value="None" id="slideThree" name="check" onchange="nightMode(body,this)" />
+                <label for="slideThree" id="slideThreeLabel"></label>
+            </div>
+            <!-- end .slideThree -->
+        </div>
     </div>
 </header>
 
-<section title=".slideThree">
-    <div class="nightmode">
-        <p id="nightMode">Dark mode</p>
-        <!-- .slideThree -->
-        <div class="slideThree">
-            <input type="checkbox" value="None" id="slideThree" name="check" onchange="nightMode(body,this)" />
-            <label for="slideThree" id="slideThreeLabel"></label>
-        </div>
-        <!-- end .slideThree -->
-    </div>
-</section>
-
 <section id="main">
-    <p class="title">Picture of The Day</p>
-    <p id="apod__title__mainpage"></p>
+
     <p id="apod__date"></p>
     <div class="buttons">
         <button id="prev" value="prev"> < Prev</button>

@@ -124,23 +124,16 @@ function loader() {
 function nightMode(x, _this) {
     if (_this.checked) {
         x.style.backgroundColor = '#222222';
-        document.getElementsByClassName("title")[0].style.color = '#fdfefe';
         document.getElementsByClassName("header__navigation")[0].style.borderBottom = '1px solid #fdfefe';
-        document.getElementById("apod__title__mainpage").style.color = '#fdfefe';
         document.getElementById("apod__date").style.color = '#fdfefe';
-        document.getElementById("apod__date").style.color = '#fdfefe';
-        document.getElementById("nightMode").style.color = '#fdfefe';
 
 
 
     } else  {
         x.style.backgroundColor = '#fdfefe';
-        document.getElementsByClassName("title")[0].style.color = '#222222';
         document.getElementsByClassName("header__navigation")[0].style.borderBottom = '1px solid #fdfefe';
-        document.getElementById("apod__title__mainpage").style.color = '#222222';
         document.getElementById("apod__date").style.color = '#222222';
-        document.getElementById("apod__date").style.color = '#222222';
-        document.getElementById("nightMode").style.color = '#222222';
+
     }
 }
 
